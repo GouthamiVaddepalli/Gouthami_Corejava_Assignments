@@ -3,11 +3,7 @@ package com.variables;
 import java.util.Scanner;
 
 public class NaturalNum {
-	public int calculateSum(int n) {
-
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter n value");
-		n = scan.nextInt();
+	public static int calculateSum(int n) {
 
 		int sum = 0;
 		for (int i = 1; i <= n; i++) {
@@ -22,10 +18,11 @@ public class NaturalNum {
 	}
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter n value");
+		int n = scan.nextInt();
 
-		NaturalNum obj = new NaturalNum();
-		int n = 0;
-		System.out.println(obj.calculateSum(n));
+		System.out.println(calculateSum(n));
 
 	}
 
